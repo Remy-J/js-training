@@ -9,7 +9,18 @@
  */
 
 // Your code :
-
+function multiply (x , y){
+    if (x < 0) {
+        x = -x
+        y = -y
+    }
+    let total = 0 
+    for (let i = 1; i <= x; i++){
+    total = total + y
+    }
+    return total
+}
+    
 //* Begin of tests
 const assert = require('assert')
 
